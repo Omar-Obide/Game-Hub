@@ -1,16 +1,20 @@
-import { Card, CardBody, Heading, Image } from "@chakra-ui/react";
+import { Card, CardBody, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { Game } from "../Hooks/useGames";
+import PlatformsIconsList from "./PlatformsIconsList";
 
 interface Props {
-  card: Game;
+  game: Game;
 }
 
-const GameCard = ({ card }: Props) => {
+const GameCard = ({ game }: Props) => {
   return (
     <Card borderRadius={10} overflow="hidden">
-      <Image src={card.background_image}></Image>
+      <Image src={game.background_image}></Image>
       <CardBody>
-        <Heading fontSize="2xl">{card.name}</Heading>
+        <Heading fontSize="2xl">{game.name}</Heading>
+        <Stack spacing={2}>
+          <PlatformsIconsList platforms={game.parent_platforms.map(p => p.platform)}></PlatformsIconsList>
+        </Stack>
       </CardBody>
     </Card>
   );
