@@ -1,12 +1,11 @@
 import { Box } from "@chakra-ui/react"
-import useGenres from "../Hooks/useGenres"
-
+import useGames from "../Hooks/useGames"
 
 const GenreList = () => {
-    const {genres} = useGenres()
+    const {data} = useGames()
   return (
     <Box>   
-        {genres.map(genre => <li key={genre.id}>{genre.name}</li>)}
+        {data.map(genre => <li key={genre.id}>{genre.name}</li>)}
     </Box>
   )
 }
