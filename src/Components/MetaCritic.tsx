@@ -5,7 +5,7 @@ interface Props {
 }
 
 const MetaCritic = ({ score }: Props) => {
-  const color = score > 70 ? "#C6F6D5" : "#FAF089";
+  const color = score > 70 ? "#68D391" : "#FAF089";
   return (
     <Badge width="fit-content" borderRadius={4} padding={1} color={color}>
       {score}

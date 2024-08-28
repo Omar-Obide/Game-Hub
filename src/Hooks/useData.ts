@@ -13,6 +13,7 @@ const useData = <T>(endpoint: string) => {
     const [isloading, setisloading] = useState(false) 
 
     useEffect(() => {
+        setisloading(true)
         const controller = new AbortController()
         apiClient
         .get<Response<T>>(endpoint, {signal: controller.signal})
