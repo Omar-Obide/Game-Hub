@@ -1,5 +1,5 @@
 import platforms from "../Data/platforms"
-import useData from "./useData"
+
 
 export interface Platform {
     id: number
