@@ -12,6 +12,7 @@ const axiosInstance = axios.create({
     key: "6ded8adacc7c427b927ad410807f67c9",
   },
 });
+
 class APIClient<T> {
   endpoint: string;
 

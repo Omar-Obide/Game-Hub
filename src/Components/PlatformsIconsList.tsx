@@ -5,14 +5,14 @@ import { FaXbox } from "react-icons/fa";
 import { SiNintendoswitch } from "react-icons/si";
 import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
-import { platform } from "../Hooks/useGames";
-import { HStack, Icon, Text } from "@chakra-ui/react";
+import { Platform } from "../Hooks/usePlatforms";
+import { HStack, Icon } from "@chakra-ui/react";
 import { FaLinux } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { IconType } from "react-icons";
 
 interface Props {
-  platforms: platform[];
+  platforms: Platform[];
 }
 
 const PlatformsIconsList = ({ platforms }: Props) => {
