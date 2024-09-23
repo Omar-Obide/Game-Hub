@@ -1,6 +1,7 @@
 import axios, { AxiosRequestConfig } from "axios";
 
 export interface Response<T> {
+  next: string
   count: number;
   results: T[];
 }
