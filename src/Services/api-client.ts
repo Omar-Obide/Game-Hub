@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from "axios";
 
 export interface Response<T> {
-  next: string
+  next: string | null
   count: number;
   results: T[];
 }
