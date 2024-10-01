@@ -5,7 +5,7 @@ import { FaXbox } from "react-icons/fa";
 import { SiNintendoswitch } from "react-icons/si";
 import { MdPhoneIphone } from "react-icons/md";
 import { BsGlobe } from "react-icons/bs";
-import { Platform } from "../Entities/Platform";
+import { Platform } from "../Hooks/Platform";
 import { HStack, Icon } from "@chakra-ui/react";
 import { FaLinux } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";

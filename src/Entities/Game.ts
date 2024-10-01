@@ -1,4 +1,4 @@
-import { Platform } from "./Platform";
+import { Platform } from "../Hooks/Platform";
 
 export interface Game {
   id: number;
