@@ -11,7 +11,7 @@ const GameTrailer = ({ gameId }: Props) => {
   if (error) throw error;
 
   return (
-    <Box marginBottom={5}>
+    <Box marginBottom={4}>
       <video
         poster={data?.results[0]?.preview}
         controls
