@@ -1,5 +1,5 @@
 import { Card, CardBody, Heading, Image, Stack } from "@chakra-ui/react";
-import { Game } from "../Entities/Game";
+import  Game  from "../Entities/Game";
 import { HStack } from "@chakra-ui/react";
 import MetaCritic from "./MetaCritic";
 import PlatformsIconsList from "./PlatformsIconsList";
