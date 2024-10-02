@@ -9,7 +9,9 @@ interface Props {
 const DefinitionItem = ({ term, children }: Props) => {
   return (
     <Box marginY={5}>
-      <Heading fontWeight='normal' fontSize='md' opacity={0.5} as="dt">{term}</Heading>
+      <Heading fontWeight="normal" fontSize="md" opacity={0.5} as="dt">
+        {term}
+      </Heading>
       <dd>{children}</dd>
     </Box>
   );
