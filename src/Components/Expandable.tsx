@@ -10,7 +10,7 @@ const Expandable = ({ children }: Props) => {
   const limit = 300;
   const summary = children.substring(0, limit) + "...";
 
-  if (!children) return null 
+  if (!children) return null;
 
   return (
     <>
